@@ -1,0 +1,107 @@
+@import "../../global.scss";
+
+.portfolio {
+  background: url("http://www.philippefercha.com/img/home-page.jpg") no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+  border: 1px solid white;
+  .portfolio-top {
+    position: relative;
+    width: 100%;
+
+    .jumbotron {
+      h1 {
+        font-size: 38px;
+        font-weight: 500;
+        text-align: center;
+        margin: 0 0 25px;
+        padding: 0;
+        text-transform: none;
+        line-height: 120%;
+        color: black;
+        padding-top: 10px;
+      }
+    }
+
+    ul {
+      width: 100%;
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: lightgrey;
+    margin-top: 10px;
+
+    .item {
+      position: relative;
+
+      width: 300px;
+      height: 230px;
+      margin: 10px;
+
+      transition: all 0.5s ease;
+      cursor: pointer;
+      overflow: hidden;
+
+      box-shadow: inset 5px 5px 5px -2px hsl(0deg 0% 100% / 70%),
+        6px 6px 9px -3px grey;
+      border: 5px solid white;
+
+      &:hover {
+        background-color: $mainColor;
+        img {
+          opacity: 0.2;
+          z-index: 3;
+        }
+      }
+
+      .btn-2 {
+        background-color: blue;
+        border-radius: 5px;
+        color: white;
+      }
+
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+
+        object-fit: fill;
+        overflow: hidden;
+      }
+
+      h2 {
+        font-size: 18px;
+        text-align: center;
+        color: black;
+        background-color: green;
+
+        height: 20px;
+
+        overflow: hidden;
+      }
+    }
+  }
+  .jumbotron {
+    overflow: hidden;
+  }
+  h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    overflow: hidden;
+  }
+}

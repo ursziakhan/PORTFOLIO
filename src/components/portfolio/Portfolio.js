@@ -13,10 +13,11 @@ import {
   businesSkillPortfolio,
 } from "../../data";
 
-function Portfolio() {
+Modal.setAppElement("#root");
+function Portfolio({}) {
   const [selected, setSelected] = useState("featured");
   const [data, setData] = useState([]);
-  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [modalIsOpenID, setModalIsOpenID] = useState("");
 
   const list = [
     {
@@ -29,7 +30,7 @@ function Portfolio() {
     },
     {
       id: "web",
-      title: "Ui/Ux Designs",
+      title: "UI/UX Designs",
     },
     {
       id: "wpphp",
@@ -53,7 +54,7 @@ function Portfolio() {
       case "projects":
         setData(webPorjectPortfolio);
         break;
-      case "design":
+      case "UI/UX Designs":
         setData(designPortfolio);
         break;
       case "wpphp":
@@ -90,18 +91,45 @@ function Portfolio() {
       <div className="container">
         {data.map((d) => (
           <div className="item">
-            <button className="btn-2" onClick={() => setModalIsOpen(true)}>
-              View
-            </button>
             <h2>{d.title}</h2>
-
+            <img
+              className="modimg"
+              src={d.img}
+              onClick={() => setModalIsOpenID(d.id)}
+              alt=""
+            />
+            <button
+              className="btn-2"
+              onClick={() => setModalIsOpenID(d.id)}
+            ></button>
             <Modal
-              isOpen={modalIsOpen}
-              onRequestClose={() => setModalIsOpen(false)}
-            >
-              <img src={d.img} alt="" />
+              isOpen={modalIsOpenID === d.id}
+              onRequestClose={() => setModalIsOpenID(false)}
+              style={{
+                overlay: {
+                  position: "absolute",
 
-              <button onClick={() => setModalIsOpen(false)}>Close</button>
+                  left: "50%",
+                  width: "80%",
+                  hieght: "60%",
+                  objectFit: "cover",
+                  borderWidth: "2px red",
+                  backgroundSize: "fill",
+                  overFlow: "hidden",
+                  position: "fixed",
+
+                  transform: "translate(-50%, 0%)",
+                },
+              }}
+            >
+              <img className="modimg" src={d.img} alt="" />
+
+              <button
+                className="closeBtn"
+                onClick={() => setModalIsOpenID(false)}
+              >
+                Close
+              </button>
             </Modal>
           </div>
         ))}

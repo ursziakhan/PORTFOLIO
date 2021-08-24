@@ -1,4 +1,5 @@
 import "./app.scss";
+import "bootstrap/dist/css/bootstrap.min.css";
 import Contact from "./components/contact/Contact";
 import Intro from "./components/intro/Intro";
 import Portfolio from "./components/portfolio/Portfolio";
@@ -12,17 +13,19 @@ function App() {
 
   return (
     <div className="app">
-      <Menu className="menu" menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <div className="sections">
-        <Topbar
-          className="topbar"
-          menuOpen={menuOpen}
-          setMenuOpen={setMenuOpen}
-        />
-        <Intro classNam="introduction" />
-        <Portfolio classNam="port" />
-        <Skills />
-        <Contact />
+      <div>
+        <Menu className="menu" menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+        <div className="sections">
+          <Topbar
+            className="topbar"
+            menuOpen={menuOpen}
+            setMenuOpen={setMenuOpen}
+          />
+          <Intro className="intro" />
+          <Portfolio className="portfolio" />
+          <Skills className="skills" />
+          <Contact className="contacts" />
+        </div>
       </div>
     </div>
   );

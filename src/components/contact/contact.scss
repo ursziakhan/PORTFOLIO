@@ -1,8 +1,6 @@
 @import "../../global.scss";
 
 .contact {
-  width: 100vw;
-  height: 100vh;
   overflow: hidden;
   display: flex;
   position: relative;
@@ -10,6 +8,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100vh;
   .headertext {
     display: flex;
 
@@ -22,11 +21,11 @@
     padding-left: 35px;
     padding-right: 35px;
     padding-top: 50px;
-    padding-bottom: 40px;
-    width: 500px;
+    box-shadow: 0 0 5px 5px #fff;
+    width: 600px;
     display: flex;
     position: relative;
-    height: 90%;
+    height: 80%;
   }
   .feedback-input {
     color: black;
@@ -66,13 +65,13 @@
   .btn1 {
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
     width: 100%;
+    margin-top: 20px;
     cursor: pointer;
     background-color: #000;
     color: white;
     font-size: 18px;
     padding-top: 22px;
     padding-bottom: 22px;
-
     transition: all 0.3s;
     border: 2px solid white;
     border-radius: 5px;

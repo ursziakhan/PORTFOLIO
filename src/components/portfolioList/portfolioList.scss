@@ -1,5 +1,6 @@
 @import "../../global.scss";
 .portfolio-menu {
+  display: flex;
   font-size: 20px;
   margin-right: 25px;
   padding: 7px;
@@ -9,9 +10,15 @@
   border: 2px solid white;
   overflow: hidden;
   padding: 10px 10px;
+  border-bottom: 2px solid grey;
+  @media (max-width: 768px) {
+    border: 2px solid black;
+    border-radius: 10%;
+  }
 
   &:hover {
-    border: 2px solid white;
+    border: 2px solid black;
+    border-radius: 10px;
     background-color: blue;
     color: white;
   }
@@ -20,35 +27,19 @@
     background-color: red;
     color: white;
   }
-  /* 
-  button {
-    height: 60px;
-    margin-right: 10px;
-    display: flex;
-    align-content: center;
+  @media (max-width: 1111px) {
+    font-size: 15px;
+    margin-right: 5px;
+  }
+  @media (max-width: 800px) {
+    font-size: 15px;
+    margin-right: 5px;
+    height: 70px;
+    width: auto;
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+    width: 100%;
     align-items: center;
-    background-color: grey;
-    color: white;
-    border-radius: 100px 100px 0px 100px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 14px;
-    padding: 12px 40px;
-    border: none;
-    font-family: roboto;
-    &:hover {
-      background-color: tomato;
-
-      border-spacing: 10px;
-      text-align: center;
-    }
-    &:visited {
-      background: red;
-    }
-    &.active {
-      background-color: $mainColor;
-      color: white;
-    }
-  } */
+  }
 }

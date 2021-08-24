@@ -1,27 +1,37 @@
 @import "../../global.scss";
 
 .portfolio {
-  background: url("http://www.philippefercha.com/img/home-page.jpg") no-repeat;
+  background: white;
   background-size: cover;
   position: relative;
   overflow: hidden;
   align-items: center;
-  border: 1px solid white;
+
+  @media (max-width: 1199px) {
+  }
+
   .portfolio-top {
     position: relative;
     width: 100%;
 
     .jumbotron {
+      height: 100px;
+      background-color: red;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       h1 {
         font-size: 38px;
         font-weight: 500;
         text-align: center;
-        margin: 0 0 25px;
-        padding: 0;
         text-transform: none;
         line-height: 120%;
         color: black;
-        padding-top: 10px;
+        background-color: red;
+        @media (max-width: 768px) {
+          font-size: 25px;
+          font-weight: 300;
+        }
       }
     }
 
@@ -29,79 +39,78 @@
       width: 100%;
       list-style: none;
       display: flex;
+      margin-top: 20px;
       justify-content: center;
       align-items: center;
+
+      @media (max-width: 768px) {
+        margin-top: 10px;
+      }
     }
   }
   .container {
-    position: relative;
     display: flex;
     width: 100%;
-    height: 70%;
-    display: flex;
-    align-content: center;
-    align-items: center;
+    height: 75%;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: lightgrey;
-    margin-top: 10px;
+    margin-top: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    @media (max-width: 768px) {
+      overflow: hidden;
+      margin-top: -10px;
+      height: auto;
+    }
 
     .item {
-      position: relative;
-
+      display: flex;
+      flex-direction: column;
       width: 300px;
       height: 230px;
-      margin: 10px;
-
-      transition: all 0.5s ease;
+      margin: 20px;
       cursor: pointer;
-      overflow: hidden;
-
-      box-shadow: inset 5px 5px 5px -2px hsl(0deg 0% 100% / 70%),
-        6px 6px 9px -3px grey;
-      border: 5px solid white;
-
-      &:hover {
-        background-color: $mainColor;
-        img {
-          opacity: 0.2;
-          z-index: 3;
-        }
-      }
-
-      .btn-2 {
-        background-color: blue;
-        border-radius: 5px;
-        color: white;
-      }
 
       img {
-        object-fit: cover;
         width: 100%;
         height: 100%;
-
-        object-fit: fill;
+        object-fit: cover;
         overflow: hidden;
+        margin-top: 10px;
+        border: 5px solid lightgreen;
+        border-radius: 10px;
+
+        &:hover {
+          background-color: red;
+        }
       }
 
       h2 {
         font-size: 18px;
         text-align: center;
         color: black;
-        background-color: green;
-
         height: 20px;
-
         overflow: hidden;
+        margin-bottom: 10px;
+        overflow: hidden;
+      }
+      button {
+        background-color: white;
+        border-color: white;
+        opacity: -1;
+      }
+      .Modal {
+        &:hover {
+          background-color: $mainColor;
+        }
+        .closeBtn {
+          color: red;
+          background-color: green;
+        }
       }
     }
   }
   .jumbotron {
-    overflow: hidden;
-  }
-  h1 {
-    font-family: "Roboto", sans-serif;
-    font-size: 30px;
     overflow: hidden;
   }
 }

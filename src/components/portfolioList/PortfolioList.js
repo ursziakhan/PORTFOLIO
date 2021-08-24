@@ -1,9 +1,12 @@
 import "./portfolioList.scss";
+import { Navbar, Nav, Container } from "react-bootstrap";
 
-export default function PortfolioList({ id, title, active, setSelected }) {
+import React from "react";
+
+function PortfolioList({ active, setSelected, title, id }) {
   return (
     <div
-      class="portfolio-menu"
+      className="portfolio-menu"
       className={active ? "portfolio-menu active " : "portfolio-menu"}
       onClick={() => setSelected(id)}
     >
@@ -11,3 +14,5 @@ export default function PortfolioList({ id, title, active, setSelected }) {
     </div>
   );
 }
+
+export default PortfolioList;

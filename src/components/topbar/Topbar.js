@@ -1,9 +1,13 @@
 import "./topbar.scss";
 import PersonIcon from "@material-ui/icons/Person";
 import MailIcon from "@material-ui/icons/Mail";
+import { useState } from "react";
+import { Navbar, Nav, Container } from "react-bootstrap";
 
 function Topbar({ setMenuOpen, menuOpen }) {
-  const list = [
+  const [opted, setOpted] = useState("home");
+
+  const lists = [
     {
       id: "home",
       title: <a href="#intro">Home</a>,
@@ -41,17 +45,7 @@ function Topbar({ setMenuOpen, menuOpen }) {
         </div>
       </div>
 
-      <div className="navigation-container">
-        {list.map((data) => (
-          <ul>
-            <li>
-              <li>
-                <a>{data.title}</a>
-              </li>
-            </li>
-          </ul>
-        ))}
-        ;
+      <div className="d-flex flex-row-reverse">
         <div className="right-menu">
           <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
             <span className="line1"></span>
@@ -59,6 +53,20 @@ function Topbar({ setMenuOpen, menuOpen }) {
             <span className="line3"></span>
           </div>
         </div>
+        <Nav className="p-2">
+          <Nav.Link href="#intro" className="active">
+            Home
+          </Nav.Link>
+          <Nav.Link href="#portfolio" className="active">
+            Portfolio
+          </Nav.Link>
+          <Nav.Link href="#skills" className="active">
+            Skills
+          </Nav.Link>
+          <Nav.Link href="#contact" className="active">
+            Contact
+          </Nav.Link>
+        </Nav>
       </div>
     </div>
   );

@@ -1,11 +1,13 @@
 @import "../../global.scss";
 
 .topbar {
-  width: 100%;
   align-items: center;
   overflow: hidden;
   z-index: 3;
   transition: all 1s ease;
+  @media (max-width: 583px) {
+    background-color: green;
+  }
 
   .top-text {
     height: 40px;
@@ -20,6 +22,10 @@
       align-items: center;
       margin-left: 5px;
       color: orange;
+      @media (max-width: 600px) {
+        display: flex;
+        justify-content: center;
+      }
 
       .logo {
         font-size: 40px;
@@ -27,11 +33,19 @@
         text-decoration: none;
         color: inherit;
         margin-right: 40px;
+        @media (max-width: 600px) {
+          font-size: 15px;
+          margin: 0 auto;
+        }
       }
       .itemContainer {
         display: flex;
         align-items: center;
         margin-left: 30px;
+
+        @media (max-width: 600px) {
+          margin-left: 8px;
+        }
         .icon {
           font-size: 18px;
           margin-right: 5px;
@@ -63,43 +77,14 @@
       }
     }
   }
-  .navigation-container {
-    margin-top: -20px;
-    display: flex;
-    width: 100%;
-    height: 70px;
-    justify-content: flex-end;
-    padding-right: 5px;
 
-    ul {
-      display: flex;
-      width: 10%;
-      font-size: 30px;
-      list-style: none;
-      justify-content: center;
-      align-content: center;
-      padding-right: 5px;
+  .d-flex {
+    background-color: black;
+    align-items: center;
+    height: 80px;
+    @media (max-width: 583px) {
       height: 100%;
-      text-decoration: none;
-
-      li {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-
-        a {
-          font-size: 25px;
-          font-weight: 300;
-          text-decoration: none;
-          padding: 5px;
-          overflow: hidden;
-          color: white;
-          border: 2px transparent;
-        }
-        li:hover {
-          border: 2px solid orange;
-        }
-      }
+      margin-top: -15px;
     }
 
     .right-menu {
@@ -110,6 +95,10 @@
       align-items: center;
       height: 70px;
       width: 70px;
+      margin-right: 20px;
+      @media (max-width: 800px) {
+        display: none;
+      }
 
       &:hover {
         background-color: orange;
@@ -130,6 +119,26 @@
           background-color: white;
           transform-origin: left;
           transition: all 1s ease;
+        }
+        @media (max-width: 800px) {
+          display: none;
+        }
+      }
+    }
+    .p-2 {
+      @media (max-width: 583px) {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .active {
+        margin-right: 10px;
+        font-size: 22px;
+        color: white;
+        font-weight: 400px;
+        border: 4px solid transparent;
+        &:hover {
+          border: 4px solid orange;
+          color: yellow;
         }
       }
     }

@@ -1,18 +1,19 @@
 @import "../../global.scss";
 .portfolio-menu {
   display: flex;
-  font-size: 20px;
-  margin-right: 25px;
-  padding: 7px;
+  margin-right: 20px;
   cursor: pointer;
-  height: 50px;
+  height: 60px;
   color: black;
   border: 2px solid white;
-  overflow: hidden;
   padding: 10px 10px;
   border-bottom: 2px solid grey;
+  @media (max-width: 449px) and (min-width: 300px) {
+  }
+
   @media (max-width: 768px) {
-    border: 2px solid black;
+    border: 2px solid white;
+    border-bottom: 2px solid grey;
     border-radius: 10%;
   }
 
@@ -41,5 +42,12 @@
     text-align: center;
     width: 100%;
     align-items: center;
+  }
+  h3 {
+    font-size: 20px;
+    @media (max-width: 449px) and (min-width: 300px) {
+      font-size: 12px;
+      font-weight: 400px;
+    }
   }
 }

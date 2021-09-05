@@ -108,7 +108,6 @@ function Portfolio({}) {
               style={{
                 overlay: {
                   position: "absolute",
-
                   left: "50%",
                   width: "80%",
                   hieght: "60%",
@@ -122,10 +121,27 @@ function Portfolio({}) {
                 },
               }}
             >
-              <img className="modimg" src={d.img} alt="" />
-
               <button
                 className="closeBtn"
+                style={{
+                  border: "4px solid red",
+                  display: "flex",
+                  marginLeft: "50%",
+                  borderRadius: "4px",
+                }}
+                onClick={() => setModalIsOpenID(false)}
+              >
+                Close
+              </button>
+              <img className="modimg" src={d.img} alt="" />
+              <button
+                className="closeBtn"
+                style={{
+                  border: "4px solid red",
+                  display: "flex",
+                  marginLeft: "50%",
+                  borderRadius: "4px",
+                }}
                 onClick={() => setModalIsOpenID(false)}
               >
                 Close
@@ -133,6 +149,11 @@ function Portfolio({}) {
             </Modal>
           </div>
         ))}
+      </div>
+      <div className="downarrow">
+        <a href="#skills">
+          <img src="assets/down.png" alt="" />
+        </a>
       </div>
     </div>
   );

@@ -3,10 +3,11 @@
 .topbar {
   align-items: center;
   overflow: hidden;
-  z-index: 3;
+  z-index: 2;
+  width: 100%;
   transition: all 1s ease;
-  @media (max-width: 583px) {
-    background-color: green;
+  @media (max-width: 900px) {
+    height: 200px;
   }
 
   .top-text {
@@ -16,7 +17,14 @@
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
-
+    @media (max-width: 900px) and (min-width: 500px) {
+      height: 70px;
+      overflow: hidden;
+    }
+    @media (max-width: 449px) and (min-width: 300px) {
+      height: 50px;
+      background-color: white;
+    }
     .left {
       display: flex;
       align-items: center;
@@ -37,18 +45,27 @@
           font-size: 15px;
           margin: 0 auto;
         }
+        @media (max-width: 449px) and (min-width: 300px) {
+          font-size: 20px;
+          font-weight: 400px;
+          margin-right: 0px;
+        }
       }
       .itemContainer {
         display: flex;
         align-items: center;
         margin-left: 30px;
-
-        @media (max-width: 600px) {
-          margin-left: 8px;
+        @media (max-width: 449px) and (min-width: 300px) {
+          margin-left: 5px;
         }
+
         .icon {
           font-size: 18px;
           margin-right: 5px;
+          @media (max-width: 449px) and (min-width: 300px) {
+            font-size: 16px;
+            margin-right: 0px;
+          }
         }
         .span {
           font-size: 15px;
@@ -82,11 +99,14 @@
     background-color: black;
     align-items: center;
     height: 80px;
-    @media (max-width: 583px) {
-      height: 100%;
-      margin-top: -15px;
+    @media (max-width: 900px) {
+      height: auto;
     }
-
+    @media (max-width: 449px) and (min-width: 300px) {
+      background-color: black;
+      height: 50px;
+      overflow: hidden;
+    }
     .right-menu {
       display: flex;
       background-color: black;
@@ -98,6 +118,12 @@
       margin-right: 20px;
       @media (max-width: 800px) {
         display: none;
+      }
+      @media (max-width: 449px) and (min-width: 300px) {
+        display: flex;
+        border-radius: 0%;
+        border: none;
+        width: 40px;
       }
 
       &:hover {
@@ -112,6 +138,9 @@
         justify-content: space-between;
         cursor: pointer;
         align-items: center;
+        @media (max-width: 449px) and (min-width: 300px) {
+          background-color: black;
+        }
 
         span {
           width: 100%;
@@ -123,13 +152,23 @@
         @media (max-width: 800px) {
           display: none;
         }
+        @media (max-width: 449px) and (min-width: 300px) {
+          display: flex;
+        }
       }
     }
     .p-2 {
-      @media (max-width: 583px) {
+      @media (max-width: 632px) {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
+        overflow: hidden;
+        height: 180px;
+        height: auto;
       }
+      @media (max-width: 449px) and (min-width: 300px) {
+        display: none;
+      }
+
       .active {
         margin-right: 10px;
         font-size: 22px;

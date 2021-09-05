@@ -4,26 +4,34 @@ import { skills } from "../../SkillsData";
 
 function Skills() {
   return (
-    <div
-      className="skills"
-      id="skills"
-      style={{
-        backgroundImage: "url(/assets/back.jpg)",
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-      }}
-    >
-      <div>
-        <h1>Skills Box</h1>
+    <div className="skills" id="skills">
+      <div className="left">
+        <div className="newimg">
+          <img src="assets/skill.jpeg" />
+        </div>
       </div>
-      <div className="container">
-        <div className="images">
+
+      <div className="right">
+        <div className="description">
+          <h1>Skills</h1>
+          <p>
+            The following technologies I use when bringing ideas to life in
+            digital form.
+          </p>
+        </div>
+
+        <div className="right1">
           {skills.map((data) => (
             <div className="text">
-              <img src={data.img} alt="" />
               <h3>{data.title}</h3>
+              <img src={data.img} alt="" />
             </div>
           ))}
+        </div>
+        <div className="downarrow">
+          <a href="#contact">
+            <img src="assets/down.png" alt="" />
+          </a>
         </div>
       </div>
     </div>

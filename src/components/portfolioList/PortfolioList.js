@@ -10,7 +10,7 @@ function PortfolioList({ active, setSelected, title, id }) {
       className={active ? "portfolio-menu active " : "portfolio-menu"}
       onClick={() => setSelected(id)}
     >
-      {title}
+      <h3>{title}</h3>
     </div>
   );
 }

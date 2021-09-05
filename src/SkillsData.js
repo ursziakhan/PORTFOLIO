@@ -4,40 +4,44 @@ export const skills = [
     img: "/assets/Images/html.png",
   },
   {
-    title: "css",
+    title: "CSS",
     img: "/assets/Images/css.png",
   },
   {
-    title: "sass",
+    title: "SAAS",
     img: "/assets/Images/sass.png",
   },
   {
-    title: "javascript",
+    title: "Javascript",
     img: "/assets/Images/javascript.png",
   },
   {
-    title: "react",
+    title: "React",
     img: "/assets/Images/react.png",
+  },
+  {
+    title: "PHP",
+    img: "/assets/Images/php.png",
   },
 
   {
-    title: "bootstrap",
+    title: "Bootstrap",
     img: "/assets/Images/bootstrap.png",
   },
   {
-    title: "git",
+    title: "Git",
     img: "/assets/Images/git.png",
   },
   {
-    title: "wordpress",
+    title: "Wordpress",
     img: "/assets/Images/wordpress.png",
   },
   {
-    title: "windows",
+    title: "Windows",
     img: "/assets/Images/windows.png",
   },
   {
-    title: "photoshop",
+    title: "Photoshop",
     img: "/assets/Images/photoshop.png",
   },
   {
@@ -45,16 +49,20 @@ export const skills = [
     img: "/assets/Images/xd.png",
   },
   {
-    title: "vscode",
+    title: "V-scode",
     img: "/assets/Images/vscode.png",
   },
 
   {
-    title: "office",
+    title: "Office",
     img: "/assets/Images/office.png",
   },
   {
     title: "UX",
     img: "/assets/Images/ux.png",
+  },
+  {
+    title: "Figma",
+    img: "/assets/Images/figma.jpg",
   },
 ];

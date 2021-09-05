@@ -13,6 +13,10 @@ function Topbar({ setMenuOpen, menuOpen }) {
       title: <a href="#intro">Home</a>,
     },
     {
+      id: "aboutme",
+      title: <a href="#aboutme">About</a>,
+    },
+    {
       id: "portfolio",
       title: <a href="#portfolio">Portfolio</a>,
     },
@@ -56,6 +60,9 @@ function Topbar({ setMenuOpen, menuOpen }) {
         <Nav className="p-2">
           <Nav.Link href="#intro" className="active">
             Home
+          </Nav.Link>
+          <Nav.Link href="#aboutme" className="active">
+            About
           </Nav.Link>
           <Nav.Link href="#portfolio" className="active">
             Portfolio

@@ -26,15 +26,7 @@ function Intro() {
   }, []);
 
   return (
-    <div
-      className="intro"
-      id="intro"
-      style={{
-        backgroundImage: "url(/assets/black.mp4)",
-
-        backgroundSize: "cover",
-      }}
-    >
+    <div className="intro" id="intro">
       <div className="left">
         <div className="imgContainer">
           <img src="assets/122.png" />
@@ -51,7 +43,7 @@ function Intro() {
           <p>
             I have hands-on experience in web programming, communications
             <br></br>and UX/UI designs by completing different School projects.I
-            have worked with HTML5,Javascript,React,PHP and Wordpress.
+            have worked with HTML5, Javascript, React, PHP and Wordpress.
           </p>
         </div>
         <div className="cv">
@@ -84,7 +76,7 @@ function Intro() {
         </div>
 
         <div className="downarrow">
-          <a href="#portfolio">
+          <a href="#aboutme">
             <img src="assets/down.png" alt="" />
           </a>
         </div>

@@ -1,8 +1,6 @@
 import "./contact.scss";
 import emailjs from "emailjs-com";
-import { useState, useEffect } from "react";
-import React, { Component } from "react";
-import ParticlesBg from "particles-bg";
+import { useState } from "react";
 
 export default function Contact() {
   const [name, setName] = useState("");
@@ -35,9 +33,8 @@ export default function Contact() {
 
   return (
     <div className="contact" id="contact">
-      <ParticlesBg num={300} type="fountain" bg={true} />
       <div className="headertext">
-        <h1 className="contactH1">Contact.</h1>
+        <h2 className="contactH1">Contact</h2>
       </div>
       <div id="form-div">
         <form onSubmit={handleSubmit} class="form" id="form1">
@@ -80,6 +77,10 @@ export default function Contact() {
           </button>
           {submit ? "thanks for your Message" : ""}
         </form>
+      </div>
+
+      <div className="copy">
+        <p>Copyright © 2021 Ziaullah Sahibzada</p>
       </div>
     </div>
   );

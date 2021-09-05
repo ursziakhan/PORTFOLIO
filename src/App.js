@@ -7,6 +7,7 @@ import Topbar from "./components/topbar/Topbar";
 import Skills from "./components/skills/Skills";
 import { useState } from "react";
 import Menu from "./components/menu/Menu";
+import Aboutme from "components/aboutme/Aboutme";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -22,6 +23,7 @@ function App() {
             setMenuOpen={setMenuOpen}
           />
           <Intro className="intro" />
+          <Aboutme className="aboutme" />
           <Portfolio className="portfolio" />
           <Skills className="skills" />
           <Contact className="contacts" />

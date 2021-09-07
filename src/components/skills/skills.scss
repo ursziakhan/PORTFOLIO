@@ -17,7 +17,7 @@
     @media (max-width: 1054px) {
       display: none;
     }
-    @media (max-width: 449px) and (min-width: 300px) {
+    @media (max-width: 600px) and (min-width: 300px) {
       display: none;
     }
 
@@ -61,7 +61,7 @@
         @media (max-width: 1054px) {
           text-align: center;
         }
-        @media (max-width: 449px) and (min-width: 300px) {
+        @media (max-width: 600px) and (min-width: 300px) {
           width: 300px;
           font-size: 18px;
         }

@@ -41,9 +41,11 @@ function Intro() {
             <span class className="ref" ref={texRef}></span>
           </h3>
           <p>
-            I have hands-on experience in web programming, communications
-            <br></br>and UX/UI designs by completing different School projects.I
-            have worked with HTML5, Javascript, React, PHP and Wordpress.
+            "Front end web developer, with hands-on web programming,
+            communications, and UX/UI designs by completing different School
+            projects. Also possess Business development background, with
+            effective perceptual, communication, analytical, problem-solving
+            skills"
           </p>
         </div>
         <div className="cv">

@@ -2,6 +2,8 @@
   display: flex;
   position: relative;
   background-color: #b4e4ba;
+  margin-left: 10px;
+  margin-right: 10px;
   @media (max-width: 900px) and (min-width: 500px) {
     flex-direction: column;
   }

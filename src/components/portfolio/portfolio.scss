@@ -7,11 +7,16 @@
   align-items: center;
   margin-left: 10px;
   margin-right: 10px;
-
+  background-image: url(https://static.npmjs.com/attachments/ck3uxepk1n4ybdr74ylkvishm-bg-pricing.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   @media (max-width: 1199px) {
     background-color: lightgrey;
   }
-
+  @media (max-width: 500px) and (min-width: 300px) {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
   .portfolio-top {
     position: relative;
     width: 100%;
@@ -28,7 +33,7 @@
         text-align: center;
         text-transform: none;
         line-height: 120%;
-        color: black;
+        color: white;
 
         @media (max-width: 768px) {
           font-size: 25px;
@@ -79,7 +84,7 @@
         object-fit: cover;
         overflow: hidden;
         margin-top: 10px;
-        border: 5px solid black;
+        border: 5px solid lightgrey;
         border-radius: 10px;
 
         &:hover {
@@ -90,7 +95,7 @@
       h2 {
         font-size: 18px;
         text-align: center;
-        color: black;
+        color: white;
         height: 20px;
         overflow: hidden;
         margin-bottom: 10px;
@@ -125,6 +130,9 @@
 
     a {
       position: relative;
+      background-color: orange;
+      border: 4px solid orange;
+      border-radius: 50%;
 
       img {
         display: flex;

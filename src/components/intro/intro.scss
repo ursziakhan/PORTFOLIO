@@ -4,17 +4,35 @@
   background-color: #b4e4ba;
   margin-left: 10px;
   margin-right: 10px;
+  overflow: hidden;
+
+  background-image: linear-gradient(
+      270deg,
+      rgba(176, 42, 42, 0.16) 0%,
+      rgba(176, 42, 42, 0.56) 18.45%,
+      rgba(176, 42, 42, 0.8) 49.67%,
+      rgba(176, 42, 42, 0.56) 82.52%,
+      rgba(176, 42, 42, 0.196364) 99.7%,
+      rgba(189, 40, 40, 0) 99.71%,
+      rgba(203, 56, 55, 0) 99.72%,
+      rgba(203, 56, 55, 0.16) 99.73%
+    ),
+    url(https://static.npmjs.com/abf53a31b2da4657a1a004ee9358551c.png);
+
   @media (max-width: 900px) and (min-width: 500px) {
     flex-direction: column;
   }
-  @media (max-width: 449px) and (min-width: 300px) {
+  @media (max-width: 500px) and (min-width: 300px) {
     flex-direction: column;
+    margin-left: 0px;
+    margin-right: 0px;
   }
   .left {
     flex: 0.5;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 
     @media (max-width: 900px) and (min-width: 500px) {
       flex: 1;
@@ -43,7 +61,7 @@
         margin-top: 10px;
         margin-bottom: 0;
       }
-      @media (max-width: 449px) and (min-width: 300px) {
+      @media (max-width: 499px) and (min-width: 300px) {
         margin-top: 20px;
         margin-left: 0px;
         width: 300px;
@@ -63,7 +81,7 @@
           padding-right: 15px;
           margin-top: 10px;
         }
-        @media (max-width: 449px) and (min-width: 300px) {
+        @media (max-width: 499px) and (min-width: 300px) {
           margin-right: 40px;
           margin-top: 30px;
         }
@@ -75,11 +93,12 @@
     display: flex;
     flex-direction: column;
     align-items: left;
+
     @media (max-width: 1392px) and (min-width: 500px) {
       flex: 0.7;
       align-items: center;
     }
-    @media (max-width: 449px) and (min-width: 300px) {
+    @media (max-width: 499px) and (min-width: 300px) {
       flex: 0.7;
       align-items: center;
     }
@@ -95,14 +114,14 @@
         align-items: center;
         margin-top: 30px;
       }
-      @media (max-width: 449px) and (min-width: 300px) {
+      @media (max-width: 499px) and (min-width: 300px) {
         align-items: center;
         margin-top: 30px;
       }
       h2 {
         display: flex;
         font-size: 35px;
-        color: black;
+        color: white;
         overflow: hidden;
         text-decoration: underline;
 
@@ -110,7 +129,7 @@
           font-size: 25px;
           font-weight: 800px;
         }
-        @media (max-width: 449px) and (min-width: 300px) {
+        @media (max-width: 499px) and (min-width: 300px) {
           font-size: 25px;
         }
       }
@@ -127,14 +146,15 @@
           font-size: 35px;
           margin-top: 30px;
         }
-        @media (max-width: 449px) and (min-width: 300px) {
+        @media (max-width: 499px) and (min-width: 300px) {
           font-size: 30px;
         }
       }
       h3 {
         display: flex;
         margin-top: 10px;
-        @media (max-width: 449px) and (min-width: 300px) {
+        overflow: hidden;
+        @media (max-width: 499px) and (min-width: 300px) {
           font-size: 30px;
         }
       }
@@ -143,11 +163,12 @@
         font-size: 20px;
         display: flex;
         text-shadow: 3px 4px 7px rgba(81, 67, 21, 0.8);
+        overflow: hidden;
 
         @media (max-width: 1392px) and (min-width: 500px) {
           font-size: 18px;
         }
-        @media (max-width: 449px) and (min-width: 300px) {
+        @media (max-width: 499px) and (min-width: 300px) {
           font-size: 18px;
           height: 100px;
           width: 200px;
@@ -163,6 +184,7 @@
         font-weight: 600;
         overflow: hidden;
         height: 30px;
+        overflow: hidden;
       }
       .ityped-cursor {
         animation: blink 1s infinite;
@@ -178,11 +200,12 @@
 
       p {
         font-size: 18px;
-        color: #222222;
+        color: white;
         padding-top: 30px;
         overflow: hidden;
         text-align: left;
         width: 600px;
+        overflow: hidden;
 
         @media (max-width: 1392px) and (min-width: 500px) {
           text-align: center;
@@ -190,7 +213,7 @@
           align: center;
           font-size: 16px;
         }
-        @media (max-width: 449px) and (min-width: 300px) {
+        @media (max-width: 499px) and (min-width: 300px) {
           font-size: 18px;
           text-align: center;
           padding-top: 0px;
@@ -209,6 +232,7 @@
     justify-content: center;
 
     margin-top: 40px;
+    overflow: hidden;
 
     a.social {
       display: flex;
@@ -246,7 +270,7 @@
     @media (max-width: 1392px) and (min-width: 500px) {
       margin-top: 30px;
     }
-    @media (max-width: 449px) and (min-width: 300px) {
+    @media (max-width: 499px) and (min-width: 300px) {
       margin-top: 20px;
     }
     .cv1 {
@@ -265,16 +289,21 @@
     margin-top: 60px;
     justify-content: center;
     margin-top: 30px;
+
     @media (max-width: 1058px) {
       margin-right: 20px;
     }
 
     a {
       position: relative;
+      background-color: orange;
+      border: 2px solid white;
+      border-radius: 50%;
 
       img {
         display: flex;
         width: 30px;
+        overflow: hidden;
 
         animation: arrowBlink 0.9s infinite;
       }

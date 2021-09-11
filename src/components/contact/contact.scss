@@ -5,34 +5,48 @@
   margin-left: 10px;
   overflow: hidden;
   display: flex;
-  position: relative;
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
   background: orange;
+
+  background-image: linear-gradient(
+      270deg,
+      rgba(176, 42, 42, 0.16) 0%,
+      rgba(176, 42, 42, 0.56) 18.45%,
+      rgba(176, 42, 42, 0.8) 49.67%,
+      rgba(176, 42, 42, 0.56) 82.52%,
+      rgba(176, 42, 42, 0.196364) 99.7%,
+      rgba(189, 40, 40, 0) 99.71%,
+      rgba(203, 56, 55, 0) 99.72%,
+      rgba(203, 56, 55, 0.16) 99.73%
+    ),
+    url(https://static.npmjs.com/3dc2ca3d2e53fc894b904d917cf90015.png);
+  @media (max-width: 500px) and (min-width: 300px) {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
   .headertext {
     display: flex;
-    position: relative;
+    margin-bottom: 10px;
     .contactH1 {
-      color: black;
+      color: white;
       overflow: hidden;
     }
   }
 
   #form-div {
-    position: relative;
     background: black;
     padding-left: 35px;
     padding-right: 35px;
-    padding-top: 50px;
-    box-shadow: 0 0 5px 5px #fff;
+    padding-top: 35px;
+
     width: 600px;
-    display: flex;
-    position: relative;
     height: 80%;
     overflow: hidden;
+    @media (max-width: 500px) and (min-width: 300px) {
+    }
   }
   .feedback-input {
     color: black;
@@ -98,6 +112,8 @@
   }
   .copy {
     overflow: hidden;
+    margin-top: 4px;
+    color: lightgrey;
   }
 
   @media only screen and (max-width: 600px) {
